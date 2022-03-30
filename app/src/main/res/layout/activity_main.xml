@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/valueEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/llMetre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mToCm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="value"
+                        android:textColor="#D81B60"
+                        android:textSize="24sp"
+                        android:visibility="visible">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Centimetre"
+                        android:textSize="20sp"
+                        android:visibility="visible">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mToFoot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="value"
+                        android:textColor="#D81B60"
+                        android:textSize="24sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Foot"
+                        android:textSize="20sp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mToInch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="value"
+                        android:textColor="#D81B60"
+                        android:textSize="24sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Inch"
+                        android:textSize="24sp">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llCel"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="24sp"
+                        android:id="@+id/celToFah"
+                        android:text="value"
+                        android:textColor="#D81B60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:textSize="24sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Fahrenheit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="24sp"
+                        android:id="@+id/celToKelvin"
+                        android:text="value"
+                        android:textColor="#D81B60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:textSize="24sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Kelvin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llKg"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="24sp"
+                        android:id="@+id/kgToG"
+                        android:text="value"
+                        android:textColor="#D81B60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:textSize="24sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Gram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="24sp"
+                        android:id="@+id/kgToOunce"
+                        android:text="value"
+                        android:textColor="#D81B60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:textSize="24sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Ounce(Oz)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="24sp"
+                        android:id="@+id/kgToPound"
+                        android:text="value"
+                        android:textColor="#D81B60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Pound(lb)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageMetre"
+            android:src="@drawable/metre"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageCel"
+            android:src="@drawable/cel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageKg"
+            android:src="@drawable/kg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp">
+        </ImageView>
+    </LinearLayout>
+</LinearLayout>
